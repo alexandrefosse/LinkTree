@@ -1,0 +1,48 @@
+body{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+}
+
+.titre{
+    text-align: center;
+    color:white;
+}
+
+.link_button{
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: Verdana, sans-serif ;
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    font-size: 15;
+    
+    transition: 0.2s ease;
+    backface-visibility: hidden;     /* réduit le flou */
+    will-change: transform;  
+}
+
+.link_button:hover{
+    font-size: 17;
+    transform: scale(1.1);
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+    
+.photo_profil{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 5px solid white;
+}
