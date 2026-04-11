@@ -35,7 +35,7 @@ body{
 div{
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
     height: 100vh;
 }
@@ -45,4 +45,11 @@ div{
     height: 150px;
     border-radius: 100%;
     border: 5px solid white;
+}
+/*Pour les mobiles*/
+@media (max-width: 768px) {
+    div{
+    justify-content:flex-start;
+    padding-top: 20px;
+    }
 }
