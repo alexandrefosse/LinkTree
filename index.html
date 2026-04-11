@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
@@ -16,11 +17,11 @@
     <div>
       <img  class="photo_profil" src="image/Photo_de_profil.jpg" alt="Photo de Profil">
       <h1 class="titre">Alexandre Fossé</h1>
-      <button type="button" class="link_button" onclick="window.location.href='https://Portfolio.alexandrefosse.fr'">Portfolio</button>
+      <button type="button" class="link_button" onclick="window.location.href='https://portfolio.alexandrefosse.fr'">Portfolio</button>
       <button type="button" class="link_button" onclick="window.location.href='https://linkedin.com/in/alexandre-fossé-2b7a143a8'">LinkedIn</button>
-      <button type="button" class="link_button">contact</button>
+      <button type="button" class="link_button">Contact</button>
       <button type="button" class="link_button">Twitch</button>
-      <a href="doc_download/Alexandre Fossé.pdf" download="CV_Alexandre_Fosse"><button type="button" class="link_button">CV</button></a>
+      <button type="button" class="link_button" onclick="downloadFile('doc_download/CV_Alexandre_Fosse.pdf','CV_Alexandre_Fossé.pdf')">CV</button>
     </div>
   </body>
 </html>
