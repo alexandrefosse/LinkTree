@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🌈 Background animé */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  animation: moveBg 10s ease infinite alternate;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-10%, -10%);
+  }
+}
+
+/* 🧊 Glass card */
+.card {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+p {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+#countdown {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* 🔘 Bouton stylé */
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 999px;
+  background: white;
+  color: #764ba2;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* 📱 Mobile fix */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding-top: 15vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
